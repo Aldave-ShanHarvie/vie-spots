@@ -1,39 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Contact - Vie-Spots</title>
-</head>
+  <head>
+    <title>Contact - Vie-Spots</title>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>Vie Spots</h1>
 
-<header>
-  <h1>Vie Spots</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <main>
+      <h2>Contact Me</h2>
+      <form>
+        <fieldset>
+          <legend>Your details</legend>
 
-<main>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
 
-  <h2>Contact Me</h2>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
 
-  <p>If you have questions, suggestions, or recommendations for places to visit, you can reach me through:</p>
+          <label for="subject">Subject</label>
 
-  <ul>
-    <li>Email: shanharvie02@gmail.com</li>
-    <li>Facebook: Allan Poor</li>
-  </ul>
+          <select id="subject" name="subject">
+            <option value="suggest-place">Suggest a Place</option>
+            <option value="correct-detail">Correct a Detail</option>
+            <option value="ask-question">Ask a Question</option>
+            <option value="other">Something Else</option>
+          </select>
 
-</main>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </fieldset>
+        
+        <button type="submit">Send message</button>
+      </form>
+      <p>
+        If you have questions, suggestions, or recommendations for places to
+        visit, you can reach me through:
+      </p>
 
-<footer>
-  <p>&copy; 2026 Vie-Spots</p>
-</footer>
+      <ul>
+        <li>Email: shanharvie02@gmail.com</li>
+        <li>Facebook: Allan Poor</li>
+      </ul>
+    </main>
 
-</body>
+    <footer>
+      <p>&copy; 2026 Vie-Spots</p>
+    </footer>
+  </body>
 </html>
