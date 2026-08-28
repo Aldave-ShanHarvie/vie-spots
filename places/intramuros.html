@@ -1,80 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Intramuros</title>
-</head>
+  <head>
+    <title>Intramuros</title>
+  </head>
 
-<body>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../about.html">About</a></li>
-      <li><a href="../contact.html">Contact</a></li>
-    </ul>
-  </nav>
+    <h1>Intramuros</h1>
 
-   <h1>Intramuros</h1>
+    <img src="../intra.jpg" alt="Intramuros Entrance" width="500" />
 
-  <img src="../intra.jpg" alt="Intramuros Entrance" width="500">
+    <h2>About Intramuros</h2>
 
-  <h2>About Intramuros</h2>
+    <p>
+      Intramuros is a historic walled area located in Manila. It is known for
+      its Spanish-era architecture, old buildings, churches, and historic
+      landmarks. It is a great place to visit for students and tourists who want
+      to learn more about the history of Manila while spending time with
+      friends.
+    </p>
 
-  <p>
-    Intramuros is a historic walled area located in Manila. It is known for
-    its Spanish-era architecture, old buildings, churches, and historic
-    landmarks. It is a great place to visit for students and tourists who
-    want to learn more about the history of Manila while spending time with
-    friends.
-  </p>
+    <p>
+      I recommend Intramuros because it is accessible from TUP and offers many
+      places to explore. Visitors can walk around the historic streets, see old
+      structures, take photos, and find places to eat nearby. It can also be a
+      good place to visit during free time or after school.
+    </p>
 
-  <p>
-    I recommend Intramuros because it is accessible from TUP and offers many
-    places to explore. Visitors can walk around the historic streets, see
-    old structures, take photos, and find places to eat nearby. It can also
-    be a good place to visit during free time or after school.
-  </p>
+    <h2>Place Details</h2>
 
-  <h2>Place Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Information</th>
+      </tr>
 
-  <table>
-    <tr>
-      <th>Detail</th>
-      <th>Information</th>
-    </tr>
+      <tr>
+        <td>Location</td>
+        <td>Intramuros, Manila</td>
+      </tr>
 
-    <tr>
-      <td>Location</td>
-      <td>Intramuros, Manila</td>
-    </tr>
+      <tr>
+        <td>Type</td>
+        <td>Historic Area</td>
+      </tr>
 
-    <tr>
-      <td>Type</td>
-      <td>Historic Area</td>
-    </tr>
+      <tr>
+        <td>Best Time to Visit</td>
+        <td>Morning or Late Afternoon</td>
+      </tr>
 
-    <tr>
-      <td>Best Time to Visit</td>
-      <td>Morning or Late Afternoon</td>
-    </tr>
+      <tr>
+        <td>Activities</td>
+        <td>Sightseeing, Walking, Taking Photos</td>
+      </tr>
 
-    <tr>
-      <td>Activities</td>
-      <td>Sightseeing, Walking, Taking Photos</td>
-    </tr>
+      <tr>
+        <td>Food</td>
+        <td>Food stalls and restaurants nearby</td>
+      </tr>
 
-    <tr>
-      <td>Food</td>
-      <td>Food stalls and restaurants nearby</td>
-    </tr>
+      <tr>
+        <td>Price Range</td>
+        <td>Varies depending on activities and food</td>
+      </tr>
+    </table>
 
-    <tr>
-      <td>Price Range</td>
-      <td>Varies depending on activities and food</td>
-    </tr>
-  </table>
+    <h2>Suggest a Place</h2>
 
+    <form>
+      <label for="place-name">Place Name</label>
+      <input type="text" id="place-name" name="place-name" required />
 
+      <fieldset>
+        <legend>Category</legend>
 
-</body>
+        <label for="food">Food</label>
+        <input type="radio" id="food" name="category" value="food" />
+
+        <label for="study">Study Spot</label>
+        <input type="radio" id="study" name="category" value="study" />
+
+        <label for="outdoors">Outdoors</label>
+        <input type="radio" id="outdoors" name="category" value="outdoors" />
+      </fieldset>
+
+      <h3>What's good about it?</h3>
+
+      <label for="affordable">Affordable</label>
+      <input
+        type="checkbox"
+        id="affordable"
+        name="good-points"
+        value="affordable"
+      />
+
+      <label for="wifi">Good Wi-Fi</label>
+      <input type="checkbox" id="wifi" name="good-points" value="wifi" />
+
+      <label for="quiet">Quiet</label>
+      <input type="checkbox" id="quiet" name="good-points" value="quiet" />
+
+      <br /><br />
+
+      <label for="contact-email">Contact Email</label>
+      <input type="email" id="contact-email" name="contact-email" required />
+
+      <br /><br />
+
+      <button type="submit">Send suggestion</button>
+    </form>
+  </body>
 </html>
