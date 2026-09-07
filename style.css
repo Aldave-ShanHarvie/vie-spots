@@ -1,0 +1,95 @@
+/* Variables */
+
+:root {
+  --brand-color: #2563eb;
+  --dark-ink: #333;
+  --muted-grey: #666;
+  --light-background: #f2f2f2;
+}
+
+/* Base Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--light-background);
+  color: var(--dark-ink);
+  line-height: 1.6;
+}
+
+/* Layout Regions */
+
+header {
+  background-color: var(--dark-ink);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--brand-color);
+}
+
+main {
+  width: 70%;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--dark-ink);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Components */
+
+article {
+  background-color: white;
+  border: 1px solid var(--muted-grey);
+  padding: 20px;
+  margin: 0 auto 20px;
+  width: 80%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+article h2,
+article h3 {
+  color: var(--brand-color);
+}
+
+article img {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0 auto 20px;
+  border-radius: 8px;
+}
+```
