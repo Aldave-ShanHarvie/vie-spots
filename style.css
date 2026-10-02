@@ -21,6 +21,34 @@ body {
   line-height: 1.6;
 }
 
+/* Page Grid Layout */
+
+.page {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-areas:
+    "masthead masthead"
+    "side     main"
+    "foot     foot";
+  gap: 16px;
+}
+
+.site-header {
+  grid-area: masthead;
+}
+
+aside {
+  grid-area: side;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: foot;
+}
+
 /* Layout Regions */
 
 .site-header {
@@ -56,6 +84,26 @@ body {
 .site-header nav a:hover {
   color: var(--brand-color);
 }
+
+/* Sidebar */
+
+aside {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid var(--brand-color);
+}
+
+aside h2,
+aside h3 {
+  color: var(--brand-color);
+}
+
+aside ul {
+  padding-left: 20px;
+}
+
+/* Main */
 
 main {
   width: 90%;
