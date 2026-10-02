@@ -21,15 +21,16 @@ body {
   line-height: 1.6;
 }
 
-/* Page Grid Layout */
+/* Mobile Page Grid */
 
 .page {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "masthead masthead"
-    "side     main"
-    "foot     foot";
+    "masthead"
+    "main"
+    "side"
+    "foot";
   gap: 16px;
 }
 
@@ -49,15 +50,15 @@ footer {
   grid-area: foot;
 }
 
-/* Layout Regions */
+/* Header */
 
 .site-header {
   background-color: var(--dark-ink);
   color: white;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .header-info h1 {
@@ -70,7 +71,8 @@ footer {
 
 .site-header nav ul {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -90,6 +92,7 @@ footer {
 aside {
   background-color: white;
   padding: 20px;
+  margin: 0 5%;
   border-radius: 10px;
   border-left: 5px solid var(--brand-color);
 }
@@ -112,10 +115,10 @@ main {
   text-align: center;
 }
 
-/* Centered Element */
+/* Hero */
 
 .hero {
-  height: 200px;
+  min-height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,6 +136,7 @@ main {
 
 .place-card {
   flex: 1 1 240px;
+  min-width: 0;
   background-color: white;
   border-radius: 10px;
   padding: 20px;
@@ -188,6 +192,7 @@ input,
 textarea,
 select {
   padding: 10px;
+  max-width: 100%;
 }
 
 input:focus,
@@ -204,4 +209,31 @@ button[type="submit"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* Tablet and Up */
+
+@media (min-width: 700px) {
+
+  .page {
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "masthead masthead"
+      "side     main"
+      "foot     foot";
+  }
+
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  aside {
+    margin: 20px 0 20px 20px;
+  }
+
+  main {
+    margin: 20px auto;
+  }
 }
