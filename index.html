@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vie-Spots</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="page">
@@ -13,7 +14,7 @@
   <header class="site-header">
 
     <div class="header-info">
-      <h1>Vie Spots</h1>
+      <h1 id="guide-name">Vie Spots</h1>
 
       <p>Discover spots where you can eat, hang out, and relax with your friends, all within easy reach of TUP.</p>
     </div>
@@ -87,13 +88,16 @@
 
     </section>
 
+    <p>Total places reviewed: <span id="place-count">0</span></p>
+
   </main>
 
   <footer>
-    <p>&copy; 2026 Vie-Spots</p>
+    <p id="copyright">&copy; 2026 Vie-Spots</p>
   </footer>
 
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
